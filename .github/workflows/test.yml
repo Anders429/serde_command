@@ -70,3 +70,12 @@ jobs:
       with:
         components: clippy
     - run: cargo clippy -- --deny warnings
+
+  msrv:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - uses: dtolnay/rust-toolchain@nightly
+    - run: curl -LsSf https://github.com/foresterre/cargo-msrv/releases/download/v0.17.1/cargo-msrv-x86_64-unknown-linux-gnu-v0.17.1.tgz | tar zxvf - -C ~/.cargo/bin
+    - run: mv ~/.cargo/bin/cargo-msrv-x86_64-unknown-linux-gnu-v0.17.1/cargo-msrv ~/.cargo/bin/cargo-msrv
+    - run: cargo msrv verify --ignore-lockfile

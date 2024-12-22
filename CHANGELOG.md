@@ -1,6 +1,8 @@
 # Changelog
 
 ## Unreleased
+### Added
+- Set minimum supported Rust version to `1.74.0`.
 ### Changed
 - Short options can now be a single grapheme instead of just a single code point.
 ### Fixed

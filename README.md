@@ -3,6 +3,7 @@
 [![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/Anders429/serde_args/test.yml?branch=master)](https://github.com/Anders429/serde_args/actions/workflows/test.yml)
 [![crates.io](https://img.shields.io/crates/v/serde_args)](https://crates.io/crates/serde_args)
 [![docs.rs](https://docs.rs/serde_args/badge.svg)](https://docs.rs/serde_args)
+[![MSRV](https://img.shields.io/badge/rustc-1.74.0+-yellow.svg)](#minimum-supported-rust-version)
 [![License](https://img.shields.io/crates/l/serde_args)](#license)
 
 Command line argument parsing with [`serde`](https://github.com/serde-rs/serde).
@@ -65,6 +66,9 @@ Running the program with example arguments of `README.md -f` will show the parse
 ```
 Args { path: "README.md", force: true }
 ```
+
+## Minimum Supported Rust Version
+This crate is guaranteed to compile on stable `rustc 1.74.0` and up.
 
 ## License
 This project is licensed under either of
