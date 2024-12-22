@@ -1,6 +1,6 @@
 # Changelog
 
-## Unreleased
+## 0.2.0 - 2024-12-21
 ### Added
 - Set minimum supported Rust version to `1.74.0`.
 ### Changed
