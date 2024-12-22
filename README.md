@@ -13,7 +13,7 @@ This library allows parsing command line arguments into types implementing [`Des
 ## Features
 - Help generation.
 - ANSI color support.
-- Integration with `serde_derive`, including attributes like `serde(alias)`.
+- Integration with `serde_derive`, including attributes like `#[serde(alias)]`.
 
 ## Usage
 Basic usage of `serde_args` simply involves calling the [`from_env()`](https://docs.rs/serde_args/latest/serde_args/fn.from_env.html) function using a type implemented `Deserialize`. The type you provide defines your program's argument format. On success, the type is returned; on failure, a printable [`Error`](https://docs.rs/serde_args/latest/serde_args/struct.Error.html) is returned.
